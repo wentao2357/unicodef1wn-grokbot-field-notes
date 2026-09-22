@@ -1,0 +1,5 @@
+asof_date,ticker,name,flip,时段,日级别趋势,当前选美,此前选美,选美强度,选美动量,当前选美状态涨幅
+2026-08-21,AAA,Alpha Test Co,V,1,无趋势,Rising 升温,Forgotten 沉寂,70.0,1.0,2.0
+2026-08-21,BBB,Beta Test Co,M,1,无趋势,Fading 松动,Crowned 共识,80.0,-1.0,-2.0
+2026-08-21,AAA,Alpha Test Co,V,2,无趋势,Rising 升温,Forgotten 沉寂,70.0,1.0,2.0
+2026-08-24,BBB,Beta Test Co,M,3,无趋势,Fading 松动,Crowned 共识,75.0,-0.5,-1.0
