@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beauty-bt"
+version = "0.1.0"
+description = "Analysis-only CLI for 行知美股 选美 M/V flip backtests"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "field-notes" }]
+dependencies = [
+  "typer>=0.12",
+  "httpx>=0.27",
+  "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+beauty-bt = "beauty_bt.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["beauty_bt*"]
+
+[tool.setuptools.package-data]
+beauty_bt = ["fixtures/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
